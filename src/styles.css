@@ -1,0 +1,13 @@
+#buttons {
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#buttonsTER {
+        -fx-font-size: 100pt;
+}
+
+.buttonsGanador {
+    -fx-text-fill: green;
+    -fx-font-size: 100pt;
+}
