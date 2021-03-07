@@ -1,5 +1,4 @@
-package sample;
-
+package sample.Partida;
 
 public class Partida {
 
@@ -70,19 +69,8 @@ public class Partida {
         }
         return victoria;
     }
-    public static void AlertaGanador(char value) {
-        if(value == 'X') {
-            Alerts.Anunciar_Ganador(0);
-            vjugador1 = vjugador1+1;
-            djugador2 = djugador2+1;
-        }else {
-            Alerts.Anunciar_Ganador(1);
-            vjugador2 = vjugador2+1;
-            djugador1 = djugador1+1;
-        }
-    }
 
-    public void EmpezarPartida() {
+    public void Empezar() {
         estado = true;
         if(Eleccion_Primer_Turno()<5) {
             turno = 0;
@@ -91,12 +79,12 @@ public class Partida {
         }
     }
 
-    public void FinalizarPartida() {
+    public void Finalizar() {
         estado = false;
         VaciarTablero();
     }
 
-    public static void AbandonarPartida() {
+    public static void Salir() {
         djugador1 = djugador1 +1;
         vjugador2 = vjugador2+1;
         estado = false;
@@ -146,3 +134,4 @@ public class Partida {
     }
 
 }
+
